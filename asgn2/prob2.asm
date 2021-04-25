@@ -1,18 +1,19 @@
-	   LXI H,2200
+	   LXI H,2050
 	   MOV B,M
-	   LXI H,2500
+	   LXI H,2051
+	   MOV D,M
 	   MVI A,00
 	   MVI C,00
 
-LOOP:	   ADD M
+LOOP:	   ADD D
 	   JNC SKIP
 	   INR C
 
 SKIP:	   INX H
 	   DCR B
 	   JNZ LOOP
-	   STA 2300
+	   STA 2052
 	   XRA A
 	   MOV A,C
-	   STA 2301
+	   STA 2053
 	   HLT

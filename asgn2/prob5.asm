@@ -9,8 +9,7 @@ LOOP:	   CMP M
 	   JNZ SKIP
 	   MOV A,C
 	   STA 204D
-	   HLT;	
-	   
+	   HLT
 
 SKIP:	   INX H
 	   INR C

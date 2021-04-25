@@ -10,7 +10,7 @@ LOOP1:	   MOV H,D
 
 LOOP2:	   INX H
 	   CMP M
-	   JC SKIP
+	   JNC SKIP
 	   MOV A,M
 	   STA 2060
 	   XCHG
